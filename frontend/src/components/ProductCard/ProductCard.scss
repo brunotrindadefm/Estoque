@@ -1,0 +1,162 @@
+  $primary-color: #007bff;
+  $background-color: #f7f9fc;
+  $border-color: #ccc;
+  $text-color: #333;
+  $hover-border-color: #007bff;
+  $hover-text-color: #007bff;
+  $transition-duration: 0.3s;
+  $border-radius: 5px;
+  $button-padding: 0.7rem;
+  $input-padding: 0.6rem;
+  $file-input-width: 100px;
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    padding: 0 1rem 1rem 1rem;
+
+    @media(max-width: 270px) {
+      width: 200px;
+    }
+    @media(max-width: 230px) {
+      width: 100%;
+    }
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    &.edit {
+      padding: .1rem;
+    }
+
+    .card-actions {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.6rem;
+
+      svg {
+        font-size: 1.3rem;
+        cursor: pointer;
+        color: $text-color;
+      }
+
+      .delete {
+        svg {
+          transition: $transition-duration;
+          &:hover {
+              color: red;
+          }
+        }
+      }
+      .edit {
+        svg {
+          font-size: 1.4rem;
+          transition: $transition-duration;
+          &:hover {
+              color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .name-price {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    img {
+      border-radius: 10px;
+      margin: .6rem 0 .8rem 0;
+      transition: $transition-duration;
+      width: 180px;
+      height: 160px;
+      @media(max-width: 270px) {
+        width: 90%;
+      }
+
+      &:hover {
+          transform: scale(1.02);
+      }
+    }
+
+    span {
+      margin: 0.2rem 0 0.7rem 0;
+    }
+
+    .description-btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 0.4rem;
+      gap: 0.2rem;
+      background-color: $primary-color;
+      cursor: pointer;
+      border-radius: $border-radius;
+      border: none;
+      color: white;
+      transition: $transition-duration;
+      @media(max-width: 270px) {
+        padding-top: .2rem;
+      }
+
+      &:hover {
+        background-color: #006ce0;
+      }
+    }
+
+    .description-container {
+      overflow: hidden;
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+
+      &.visible {
+        margin-top: 0.5rem;
+        opacity: 1;
+        transform: scaleY(1);
+      }
+    }
+
+    .stock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin: 0.5rem 0 1rem 0;
+
+      p {
+        font-weight: 350;
+        margin-bottom: .2rem;
+      }
+
+      button {
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        border: none;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    p {
+      font-weight: bold;
+    }
+  }
