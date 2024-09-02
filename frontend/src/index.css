@@ -7,7 +7,7 @@
 
 body, html {
     height: 100%;
-    background-color: #B0BEC5;
+    background-color: #0288d1;
 }
 
 #root {
@@ -21,7 +21,7 @@ body, html {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background-color: #B0BEC5;
+    background-color: #0288d1;
 }
 
 .close-snackbar {
@@ -32,4 +32,23 @@ body, html {
 
 .close-snackbar:hover {
     color: red;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f7f9fc;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #f7f9fc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
