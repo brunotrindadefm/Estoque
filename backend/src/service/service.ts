@@ -8,7 +8,7 @@ const getProducts = async () => {
     return products;
   } catch (error) {
     console.error("Erro interno no servidor", error);
-    throw console.error;
+    throw error;
   }
 };
 
@@ -27,7 +27,7 @@ const createProduct = async (data: {
     return await Product.create(data);
   } catch (error) {
     console.error("Erro interno no servidor", error);
-    throw console.error;
+    throw error;
   }
 };
 
@@ -59,7 +59,7 @@ const updatedStock = async (id: number, quantity: number) => {
     return product;
   } catch (error) {
     console.error("Erro interno no servidor", error);
-    throw console.error;
+    throw error;
   }
 };
 
@@ -81,7 +81,7 @@ const deleteProduct = async (id: number) => {
     await product.destroy();
   } catch (error) {
     console.error("Erro interno no servidor", error);
-    throw console.error;
+    throw error;
   }
 };
 

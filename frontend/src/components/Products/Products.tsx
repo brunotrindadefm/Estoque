@@ -2,10 +2,10 @@ import "./Products.scss";
 
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Product } from "../../intefaces/Product";
+import { Product } from "../../interfaces/Product";
 
 import ProductCard from "../ProductCard/ProductsCard";
-import { ProductsProps } from "../../intefaces/ProductsProps";
+import { ProductsProps } from "../../interfaces/ProductsProps";
 
 import Snackbar from "../SnackBar/SnackBar";
 

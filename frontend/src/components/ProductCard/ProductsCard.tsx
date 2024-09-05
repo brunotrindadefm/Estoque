@@ -1,6 +1,6 @@
 import "./ProductCard.scss";
 
-import { ProductsCardProps } from "../../intefaces/ProductCardProps";
+import { ProductsCardProps } from "../../interfaces/ProductCardProps";
 
 import { formatCurrency } from "../../utils/FormatPrice";
 
@@ -11,7 +11,7 @@ import { FaAngleDown, FaMinus, FaPlus, FaRegEdit } from "react-icons/fa";
 import { FaRegTrashCan } from "react-icons/fa6";
 import EditProduct from "../EditProduct/EditProduct";
 
-import { Product } from "../../intefaces/Product";
+import { Product } from "../../interfaces/Product";
 
 import Snackbar from "../SnackBar/SnackBar";
 

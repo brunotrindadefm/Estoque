@@ -2,7 +2,7 @@ import { useState } from "react";
 import Form from "./components/Form/Form";
 import Products from "./components/Products/Products";
 import "./index.css";
-import { Product } from "./intefaces/Product";
+import { Product } from "./interfaces/Product";
 
 function App() {
 

@@ -5,7 +5,7 @@ import axios from "axios";
 
 import { FaImage } from "react-icons/fa";
 
-import { FormProps } from "../../intefaces/FormProps";
+import { FormProps } from "../../interfaces/FormProps";
 
 import Snackbar from "../SnackBar/SnackBar";
 

@@ -3,7 +3,7 @@ import "./EditProduct.scss";
 import { useState } from "react";
 
 import { FaImage } from "react-icons/fa";
-import { EditProductProps } from "../../intefaces/EditProductProps";
+import { EditProductProps } from "../../interfaces/EditProductProps";
 
 const EditProduct = ({onCancel, onSave, product}: EditProductProps) => {
     const [updatedName, setUpdatedName] = useState<string>(product.name);
